@@ -1,0 +1,119 @@
+.container-top{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
+    margin-top: 30px;
+    background-color: $dark-violet;
+    max-height: 500px;
+    padding: 0 100px 0 100px;
+    &__article{
+        max-height: 500px;
+        align-self: center;
+    }
+    .article__h2{
+        color: $very-light-gray;
+        font-family: $font-title;
+        font-size: 5.0em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        border-top: 2px solid $very-light-gray;
+    }
+    .article__p {
+        color: $very-light-gray;
+        font-family: $font-text;
+        font-size: 1.6em;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    .article__button{
+        @include boton;
+    }
+}
+
+.article__button:hover {
+    cursor: pointer;
+}
+
+.container-top__figure {
+    .figure-family {
+        position: relative;
+        top: 120px;
+        left: 40px;
+        z-index: 1;
+        height: 510px;
+        width: 500px;
+    }
+    .figure-lines{
+        position: relative;
+        z-index: 2;
+        bottom: 510px;
+        left: 330px;
+        max-height: 400px;
+        width: 300px;
+    }
+}
+
+.lines {
+    position: relative;
+    z-index: 1;
+    bottom: 150px;
+    height: 350px;
+    width: 130px;
+}
+
+.container-middle {
+    position: relative;
+    bottom: 100px;
+    padding: 0px 100px 0 100px;
+    &__h2{
+        margin-top: 30px;
+        @include titulo;
+    }
+    .box-options{
+        display: flex;
+        justify-content: center;
+    }
+    .options{
+        &__logo {
+            height: 50px;
+            width: 50px;
+            margin-bottom: 20px;
+        }
+        &__title {
+            @include options-title;
+        }
+        &__text {
+            @include options-text;
+        }
+    }
+}
+
+.container-low {
+    margin: 100px 100px 0px 100px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr none;
+    background-color: $dark-violet;
+    height: 200px;
+    &__title {
+        @include sub-titulo;
+    }
+    &__button {
+        position: relative;
+        z-index: 2;
+        margin-top: 70px;
+        @include boton;
+    }
+    &__line {
+        position: relative;
+        z-index: 1;
+        left: 716px;
+        bottom: 160px;
+        height: 200px;
+    }
+}
+
+.container-low__button:hover {
+    cursor: pointer;
+}

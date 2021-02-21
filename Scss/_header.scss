@@ -1,0 +1,24 @@
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+ .nav__ul{
+     display: flex;
+    &--li {
+    list-style-type: none;
+    margin-left: 10px;
+    font-family: $font-title;
+    font-size: 1.6em;
+    color: $dark-grayish-violet;
+    font-weight: 300;
+}
+}
+}
+
+.nav__ul--li:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 5px;
+}
